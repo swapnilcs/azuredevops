@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: swapnilcs1702.azurecr.io/swapnilcs/azuredevops:#{Build.BuildId}#
+        image: swapnilcs1702.azurecr.io/swapnilcs/azuredevops:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
