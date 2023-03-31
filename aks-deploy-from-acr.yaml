@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
-# service type loadbalancer       
+# service type loadbalancer for trsting    
 ---
 apiVersion: v1
 kind: Service
