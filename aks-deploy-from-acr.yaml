@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-springboot-deployment
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: springboot-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: myacrrepo4321.azurecr.io/akannan1087/springboot-app:#{Build.BuildId}#
+        image: swapnilcs1702.azurecr.io/swapnilcs/azuredevops:#{Build.BuildId}#
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
